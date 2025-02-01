@@ -5,4 +5,13 @@
 */
 
 // your code
-let sum
+let sum = 0;
+let numberArrive = 1;
+while (numberArrive <= 20) {
+  if (numberArrive % 2 === 1) {
+    sum = sum + numberArrive;
+  }
+  numberArrive = numberArrive + 1;
+
+  console.log("sum", sum, "n", numberArrive);
+}
