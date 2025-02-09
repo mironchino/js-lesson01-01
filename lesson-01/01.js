@@ -2,10 +2,11 @@
 // // Результат присвойте переменной sum
 
 // // your code
-// let sum = 0;
-// let numbersArrives = 1;
-// while (numbersArrives <= 20) {
-//   sum = sum + numbersArrives;
-//   numbersArrives = numbersArrives + 1;
-// }
-// console.log(sum);
+let sum = 0; // задаем значение стартовой суммы 0
+let numbersArrives = 1; // задаем значение стартового сложения от единицы
+while (numbersArrives <= 20) {
+  // задаем условие, что до тех пор пока складываемое число не достигнет 20, то цикл продолжается
+  sum = sum + numbersArrives; // пока цикл продолжается, то переменная суммы перезаписывается складывается с цифрами из ряда
+  numbersArrives = numbersArrives + 1; // каждый цикл переменная с цифрой увеличивается на 1, пока не закончится цикл до 20
+}
+console.log(sum); // выводит новое значение суммы после всех циклов

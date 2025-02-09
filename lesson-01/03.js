@@ -5,13 +5,15 @@
 */
 
 // your code
-let sum = 0;
-let numberArrive = 1;
+let sum = 0; // задаем начальное значение суммы 0
+let numberArrive = 1; // задаем первую цифру из диапазона
 while (numberArrive <= 20) {
+  // цикл будет работать пока диапазон не достигнет 20
   if (numberArrive % 2 === 1) {
-    sum = sum + numberArrive;
+    // если остаток деления цифры диапазона на 2 будет равен 1, то выполняется следующее
+    sum = sum + numberArrive; // сумма равняется сумме прибавленной к числу, у которой при делении есть остаток 1
   }
-  numberArrive = numberArrive + 1;
+  numberArrive = numberArrive + 1; // при каждом цикле цифра из диапозона прибавляет 1
 
   console.log("sum", sum, "n", numberArrive);
 }
