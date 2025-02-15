@@ -10,7 +10,7 @@
 let isWinningDouble = false; // Изначально считаем, что выигрышного дубля нет
 let dice1, dice2;
 
-while (!isWinningDouble) {
+/* while (!isWinningDouble) {
   dice1 = Math.floor(Math.random() * 6) + 1; // Генерируем случайное число от 1 до 6
   dice2 = Math.floor(Math.random() * 6) + 1; // Генерируем случайное число от 1 до 6
 
@@ -21,7 +21,7 @@ while (!isWinningDouble) {
 
 console.log(
   `Выпало: dice1 = ${dice1}, dice2 = ${dice2}, isWinningDouble = ${isWinningDouble}`
-);
+); */
 
 /* console.log("Первый бросок: " + dice1);
 console.log("Второй бросок: " + dice2);
