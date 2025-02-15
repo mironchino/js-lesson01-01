@@ -4,7 +4,7 @@
  * Результат сохраните в переменной grade.
  */
 
-/* const score = Math.floor(Math.random() * 100) + 1; // тестовое значение, можно изменять
+/* const score;' // тестовое значение, можно изменять
 let grade;
 
 if (score >= 0 && score <= 49) {
