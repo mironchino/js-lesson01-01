@@ -27,7 +27,7 @@ for (let count = 0; count < array.length; count++) {
 }
 console.log(found); */
 
-let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
+/* let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
 let carName = "Audi";
 let found = false;
 function searchElement(arrayCars, carName) {
@@ -42,4 +42,4 @@ function searchElement(arrayCars, carName) {
     }
   }
 }
-searchElement(arrayCars, carName);
+searchElement(arrayCars, carName); */
