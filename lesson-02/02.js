@@ -7,39 +7,21 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
-let dice1 = Math.floor(Math.random() * (6 - 1 + 1) + 1); // your code
-let dice2 = Math.floor(Math.random() * (6 - 1 + 1) + 1); // your code
-/* let isWinningDouble = false; // your code
-let count = 0;
-
-while (isWinningDouble !== true) {
-  if (dice1 === dice2 && dice1 > 3) {
-    isWinningDouble = true;
-    count++;
-    console.log("You Win");
-
-    break;
-  } else {
-    isWinningDouble = false;
-    count++;
-  }
-} */
-
-let isWinningDouble = false; // Переменная, указывающая на выигрышный дубль
-let count = 0;
+let isWinningDouble = false; // Изначально считаем, что выигрышного дубля нет
+let dice1, dice2;
 
 while (!isWinningDouble) {
-  let dice1 = Math.floor(Math.random() * 6) + 1; // Генерируем новое число от 1 до 6
-  let dice2 = Math.floor(Math.random() * 6) + 1; // Генерируем новое число от 1 до 6
-  count++; // Увеличиваем счетчик попыток
-
-  console.log(`Попытка ${count}: dice1 = ${dice1}, dice2 = ${dice2}`);
+  dice1 = Math.floor(Math.random() * 6) + 1; // Генерируем случайное число от 1 до 6
+  dice2 = Math.floor(Math.random() * 6) + 1; // Генерируем случайное число от 1 до 6
 
   if (dice1 === dice2 && dice1 > 3) {
     isWinningDouble = true;
-    console.log(`Выигрышный дубль! ${dice1}, ${dice2} за ${count} попыток.`);
   }
 }
+
+console.log(
+  `Выпало: dice1 = ${dice1}, dice2 = ${dice2}, isWinningDouble = ${isWinningDouble}`
+);
 
 /* console.log("Первый бросок: " + dice1);
 console.log("Второй бросок: " + dice2);
