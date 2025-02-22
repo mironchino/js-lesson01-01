@@ -16,7 +16,7 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-let arrayNumbers = [1, 2, 3, 4, 5, 6];
+/* let arrayNumbers = [1, 2, 3, 4, 5, 6];
 let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia"];
 
 function includesElement(array, element) {
@@ -49,3 +49,4 @@ function findCommonElements(array1, array2) {
 }
 
 console.log(findCommonElements(arrayNumbers, arrayCars));
+ */
