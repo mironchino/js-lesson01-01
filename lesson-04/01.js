@@ -44,7 +44,7 @@ function includesElement(arrayCars, carName) {
 }
 includesElement(arrayCars, carName);
  */
-let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
+/* let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
 let carName = "Audi";
 let found;
 
@@ -63,4 +63,4 @@ function includesElement(array, carName) {
   return found;
 }
 
-const audi = includesElement(arrayCars, carName);
+const audi = includesElement(arrayCars, carName); */
