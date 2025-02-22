@@ -30,7 +30,7 @@ console.log(found); */
 let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
 let carName = "Audi";
 let found = false;
-function searchElement(arrayCars, carName) {
+function includesElement(arrayCars, carName) {
   for (let count = 0; count < arrayCars.length; count++) {
     if (arrayCars[count] === carName) {
       found = true;
@@ -42,4 +42,4 @@ function searchElement(arrayCars, carName) {
     }
   }
 }
-searchElement(arrayCars, carName);
+includesElement(arrayCars, carName);
