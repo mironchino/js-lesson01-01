@@ -27,7 +27,7 @@ for (let count = 0; count < array.length; count++) {
 }
 console.log(found); */
 
-let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
+/* let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
 let carName = "Audi";
 let found = false;
 function includesElement(arrayCars, carName) {
@@ -43,3 +43,24 @@ function includesElement(arrayCars, carName) {
   }
 }
 includesElement(arrayCars, carName);
+ */
+let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
+let carName = "Audi";
+let found;
+
+function includesElement(array, carName) {
+  found = false;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === carName) {
+      found = true;
+      console.log("We found the element " + carName + " for " + i);
+      break;
+    }
+    if (found !== false) {
+      console.log("we did't found the element");
+    }
+  }
+  return found;
+}
+
+const audi = includesElement(arrayCars, carName);
