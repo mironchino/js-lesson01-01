@@ -14,7 +14,7 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-const arrayinput = [
+/* const arrayinput = [
   "pet",
   "pet",
   "dog",
@@ -50,8 +50,8 @@ function findUniqueElements(array) {
       }
     }
     if (
-      isDuplicate !== false &&
-      !includesElement(arrayOutput, currentElement)
+      isDuplicate !== true &&
+      includesElement(arrayOutput, currentElement) !== true
     ) {
       arrayOutput.push(currentElement);
     }
@@ -59,4 +59,4 @@ function findUniqueElements(array) {
   return arrayOutput;
 }
 
-console.log(findUniqueElements(arrayinput));
+console.log(findUniqueElements(arrayinput)); */
