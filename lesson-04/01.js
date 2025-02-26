@@ -21,17 +21,14 @@ function includesElement(array, carName) {
   found = false;
   for (let i = 0; i < array.length; i++) {
     if (array[i] === carName) {
-      found = true;
       console.log("We found the element " + carName + " for " + i);
-      break;
+      return (found = true);
     }
     if (found === false) {
-      found = true;
       console.log("we did't found the element");
-      break;
+      return (found = true);
     }
   }
-  return found;
 }
 
 const audi = includesElement(
