@@ -17,17 +17,15 @@ let arrayCars = [1, 2, 3];
 let carName = 2;
 let found;
 
-function includesElement(array, carName) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === carName) {
-      return (found = true);
+function includesElement(array, element) {
+  for (let i = 0; i < array.length; i++)
+    if (array[i] === element) {
+      return true;
     }
-
-    return (found = false);
-  }
+  return false;
 }
 
-const audi = includesElement([1, 2, 3], 2);
+const audi = includesElement([1, 2, 3], 4);
 
 /* let array = [1, 2, 3, 4, 5, 6];
 let element = 5;
