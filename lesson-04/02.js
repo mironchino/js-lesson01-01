@@ -14,20 +14,8 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-/* const arrayinput = [
-  "pet",
-  "pet",
-  "dog",
-  "dog",
-  "fish",
-  "fish",
-  "cat",
-  "carrot",
-  "shark",
-  "rabbit",
-  "cars",
-  "cars",
-];
+
+/* const arrayinput = [1, 2, 3, 2, 4, 4, 5];
 
 function includesElement(array, element) {
   for (let i = 0; i < array.length; i++)
