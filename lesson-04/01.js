@@ -13,28 +13,21 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-let arrayCars = ["BMW", "Audi", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"];
-let carName = "Audi";
+let arrayCars = [1, 2, 3];
+let carName = 2;
 let found;
 
 function includesElement(array, carName) {
-  found = false;
   for (let i = 0; i < array.length; i++) {
     if (array[i] === carName) {
-      console.log("We found the element " + carName + " for " + i);
       return (found = true);
     }
-    if (found === false) {
-      console.log("we did't found the element");
-      return (found = true);
-    }
+
+    return (found = false);
   }
 }
 
-const audi = includesElement(
-  ["BMW", "Mazeratti", "Lada", "Hyundai", "Kia", "Jeep"],
-  "Audi"
-);
+const audi = includesElement([1, 2, 3], 2);
 
 /* let array = [1, 2, 3, 4, 5, 6];
 let element = 5;
