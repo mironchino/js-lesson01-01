@@ -17,12 +17,14 @@ let arrayCars = [1, 2, 3];
 let carName = 2;
 let found;
 
-function includesElement(array, element) {
-  for (let i = 0; i < array.length; i++)
-    if (array[i] === element) {
+function includesElement(array, carName) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === carName) {
       return (found = true);
     }
-  return (found = false);
+
+    return (found = false);
+  }
 }
 
 const audi = includesElement([1, 2, 3], 2);
