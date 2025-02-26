@@ -22,9 +22,8 @@ function includesElement(array, carName) {
     if (array[i] === carName) {
       return (found = true);
     }
-
-    return (found = false);
   }
+  return (found = false);
 }
 
 const audi = includesElement(arrayCars, carName);
