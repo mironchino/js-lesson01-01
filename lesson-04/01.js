@@ -20,12 +20,12 @@ let found;
 function includesElement(array, element) {
   for (let i = 0; i < array.length; i++)
     if (array[i] === element) {
-      return true;
+      return (found = true);
     }
-  return false;
+  return (found = false);
 }
 
-const audi = includesElement([1, 2, 3], 4);
+const audi = includesElement([1, 2, 3], 2);
 
 /* let array = [1, 2, 3, 4, 5, 6];
 let element = 5;
