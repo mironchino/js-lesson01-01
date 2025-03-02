@@ -32,12 +32,13 @@ function findUniqueElements(array) {
 
   for (let i = 0; i < array.length; i++) {
     let uniqueElement = array[i];
-    if (includesElement(arrayOutput, uniqueElement) === false) {
+    if (!includesElement(arrayOutput, uniqueElement)) {
       arrayOutput.push(uniqueElement);
     }
   }
   return arrayOutput;
 }
+
 console.log(findUniqueElements(arrayInput));
 
 /* function findUniqueElements(array) {
