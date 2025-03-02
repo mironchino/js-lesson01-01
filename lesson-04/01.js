@@ -13,7 +13,7 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-let arrayCars = ["Audi", "Kia", "Jeep"];
+/* let arrayCars = ["Audi", "Kia", "Jeep"];
 let carName = "Jeep";
 let found;
 
@@ -26,7 +26,7 @@ function includesElement(array, carName) {
   return (found = false);
 }
 
-const audi = includesElement(arrayCars, carName);
+const audi = includesElement(arrayCars, carName); */
 
 /* let array = [1, 2, 3, 4, 5, 6];
 let element = 5;
