@@ -68,7 +68,7 @@ clearCartButton.addEventListener("click", function () {
 });
 
 // Твой код:
-
+/* 
 petShop.addEventListener("click", function (event) {
   const button = event.target.closest(".pet");
   if (button === null) return;
@@ -82,4 +82,4 @@ petShop.addEventListener("click", function (event) {
   cart.push(petId);
   updateCartDisplay();
   messageBox.textContent = "";
-});
+}); */
