@@ -9,7 +9,7 @@
 * truncate("Короткая строка", 20) // Ожидаемый результат: "Короткая строка"
 */
 
-function truncate(str, maxLength) {
+/* function truncate(str, maxLength) {
   let words = str.split("");
   if (words.length > maxLength) {
     return (words = str.slice(0, maxLength) + "...");
@@ -18,4 +18,4 @@ function truncate(str, maxLength) {
   }
 }
 
-console.log(truncate("Вот, что мне действительно нравится в этом", 20));
+console.log(truncate("Вот, что мне действительно нравится в этом", 20)); */
