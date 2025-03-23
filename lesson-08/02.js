@@ -29,22 +29,28 @@ const startButton = document.getElementById("start");
 const cancelButton = document.getElementById("cancel");
 const countdownDisplay = document.getElementById("countdown");
 
-let isTimerStarted = false;
-let timerId;
+let isTimerStarted = false; // Флаг состояния
+let timerId = null; // ID таймера
 
 startButton.addEventListener("click", () => {
-  if (timerId) clearInterval(timerId);
+  // Если таймер уже запущен — ничего не делаем
+  if (isTimerStarted) {
+    console.log("Таймер уже работает!");
+    return;
+  }
 
+  // Запускаем таймер
+  isTimerStarted = true; // Устанавливаем флаг
   countdownDisplay.textContent = "3";
   let counter = 3;
 
-  // Запускаем новый таймер
   timerId = setInterval(() => {
     counter--;
     if (counter === 0) {
       countdownDisplay.textContent = "🚀";
       clearInterval(timerId);
       timerId = null;
+      isTimerStarted = false; // Сбрасываем флаг
     } else {
       countdownDisplay.textContent = counter;
     }
@@ -52,10 +58,11 @@ startButton.addEventListener("click", () => {
 });
 
 cancelButton.addEventListener("click", () => {
-  // your code
-  if (timerId) {
+  if (isTimerStarted) {
+    // Проверяем флаг
     clearInterval(timerId);
     timerId = null;
+    isTimerStarted = false; // Сбрасываем флаг
     countdownDisplay.textContent = "Отменено";
   }
 });
