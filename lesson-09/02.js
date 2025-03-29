@@ -24,4 +24,38 @@ const doubledNumbers = map(numbers, (element, index) => {
 console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
-const map = () => {}
+const newArrayComponents = [
+  "button",
+  "button",
+  "button",
+  "Input",
+  "bmw",
+  1,
+  null,
+  undefined,
+  ,
+  true,
+  false,
+  {},
+];
+
+const map = (array, callback) => {
+  const mapedArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (!(i in array)) {
+      continue;
+    }
+    const element = array[i];
+    const index = i;
+    mapedArray.push(callback(element, index));
+  }
+
+  return mapedArray;
+};
+
+const result = map(newArrayComponents, (element, index) => {
+  return `${index}: ${typeof element}`;
+});
+
+console.log(result);

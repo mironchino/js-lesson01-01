@@ -23,7 +23,7 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
-const newArrayComponents = [
+/* const newArrayComponents = [
   "button",
   "button",
   "button",
@@ -62,3 +62,4 @@ const fillfiilf = filter(newArrayComponents, (el, idx) => {
 });
 
 console.log(fillfiilf);
+ */
