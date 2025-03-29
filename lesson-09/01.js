@@ -23,4 +23,42 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
-const filter = () => {}
+const newArrayComponents = [
+  "button",
+  "button",
+  "button",
+  "Input",
+  "bmw",
+  1,
+  null,
+  undefined,
+  ,
+  true,
+  false,
+  {},
+];
+
+const filter = (array, callback) => {
+  const filteredArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (i in array === false) {
+      continue;
+    }
+
+    const element = array[i];
+    const index = i;
+
+    if (callback(element, index)) {
+      filteredArray.push(element);
+    }
+  }
+
+  return filteredArray;
+};
+
+const fillfiilf = filter(newArrayComponents, (el, idx) => {
+  return typeof el === "string";
+});
+
+console.log(fillfiilf);
